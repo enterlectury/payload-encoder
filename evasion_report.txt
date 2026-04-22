@@ -1,0 +1,52 @@
+============================================================
+  PAYLOAD OBFUSCATION FRAMEWORK - EVASION REPORT
+  Date: 2026-04-22 12:31:42
+============================================================
+
+Original Payload:
+  powershell -nop -c exec(payload); /bin/sh reverse_shell
+
+Summary:
+  Total tested  : 8
+  Detected      : 1
+  Bypassed      : 7
+  Bypass Rate   : 87.5%
+
+------------------------------------------------------------
+
+  Method  : Original Payload
+  Result  : DETECTED
+  Preview : powershell -nop -c exec(payload); /bin/sh reverse_shell
+  Matched : /bin/sh, exec(, powershell, payload, reverse_shell
+
+  Method  : Base64 Encoded
+  Result  : BYPASSED
+  Preview : cG93ZXJzaGVsbCAtbm9wIC1jIGV4ZWMocGF5bG9hZCk7IC9iaW4vc2ggcmV2ZXJzZV9zaGVsbA==
+
+  Method  : XOR Encoded
+  Result  : BYPASSED
+  Preview : 5a455d4f5859424f46460a0744455a0a07490a4f524f49025a4b5346454b4e03110a054843440559
+
+  Method  : ROT13 Encoded
+  Result  : BYPASSED
+  Preview : cbjrefuryy -abc -p rkrp(cnlybnq); /ova/fu erirefr_furyy
+
+  Method  : Reversed String
+  Result  : BYPASSED
+  Preview : llehs_esrever hs/nib/ ;)daolyap(cexe c- pon- llehsrewop
+
+  Method  : ASCII Char Split
+  Result  : BYPASSED
+  Preview : 112-111-119-101-114-115-104-101-108-108-32-45-110-111-112-32-45-99-32-101-120-10
+
+  Method  : Hex Escape Sequence
+  Result  : BYPASSED
+  Preview : \x70\x6f\x77\x65\x72\x73\x68\x65\x6c\x6c\x20\x2d\x6e\x6f\x70\x20\x2d\x63\x20\x65
+
+  Method  : Random Junk Inserted
+  Result  : BYPASSED
+  Preview : powe|n|rshe|d|ll -|a|nop |z|-c e|o|xec(|c|payl|p|oad)|s|; /b|j|in/s|o|h re|h|ver
+
+============================================================
+  END OF REPORT
+============================================================
