@@ -96,6 +96,9 @@ payload-encoder/
 ```
 
 ---
+## Demonstraion video
+<video src="https://github.com/user-attachments/assets/c0f6b632-f08b-4bbb-b09f-ee5400d06486" width="50%" controls>
+</video>
 
 ## Libraries used
 
